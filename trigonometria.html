@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas de Trigonometria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .formula-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="container mx-auto">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Fórmulas de Trigonometria</h1>
+
+        <div class="space-y-6">
+            
+            <!-- Fórmulas Fundamentais -->
+            <div class="formula-card">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Fórmulas Fundamentais</h2>
+                <div class="text-gray-600 space-y-2">
+                    <p>Seno: $$\sin(\theta) = \frac{\text{cateto oposto}}{\text{hipotenusa}}$$</p>
+                    <p>Cosseno: $$\cos(\theta) = \frac{\text{cateto adjacente}}{\text{hipotenusa}}$$</p>
+                    <p>Tangente: $$\tan(\theta) = \frac{\text{cateto oposto}}{\text{cateto adjacente}} = \frac{\sin(\theta)}{\cos(\theta)}$$</p>
+                    <p>Relação Fundamental: $$\sin^2(\theta) + \cos^2(\theta) = 1$$</p>
+                </div>
+            </div>
+
+            <!-- Fórmulas de Adição e Subtração -->
+            <div class="formula-card">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Fórmulas de Adição e Subtração</h2>
+                <div class="text-gray-600 space-y-2">
+                    <p>Seno: $$\sin(a \pm b) = \sin(a)\cos(b) \pm \cos(a)\sin(b)$$</p>
+                    <p class="text-center italic text-sm mt-1">"Minha terra tem palmeiras, onde canta o sabiá, seno A cosseno B, seno B cosseno A."</p>
+                    <p>Cosseno: $$\cos(a \pm b) = \cos(a)\cos(b) \mp \sin(a)\sin(b)$$</p>
+                    <p class="text-center italic text-sm mt-1">"Coça, coça, senta, senta."</p>
+                    <p>Tangente: $$\tan(a \pm b) = \frac{\tan(a) \pm \tan(b)}{1 \mp \tan(a)\tan(b)}$$</p>
+                </div>
+            </div>
+
+            <!-- Fórmulas de Arco Duplo -->
+            <div class="formula-card">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Fórmulas de Arco Duplo</h2>
+                <div class="text-gray-600 space-y-2">
+                    <p>Seno de Arco Duplo: $$\sin(2\theta) = 2\sin(\theta)\cos(\theta)$$</p>
+                    <p>Cosseno de Arco Duplo: $$\cos(2\theta) = \cos^2(\theta) - \sin^2(\theta)$$</p>
+                    <p class="pl-4">Forma alternativa 1: $$\cos(2\theta) = 2\cos^2(\theta) - 1$$</p>
+                    <p class="pl-4">Forma alternativa 2: $$\cos(2\theta) = 1 - 2\sin^2(\theta)$$</p>
+                    <p>Tangente de Arco Duplo: $$\tan(2\theta) = \frac{2\tan(\theta)}{1 - \tan^2(\theta)}$$</p>
+                </div>
+            </div>
+
+            <!-- Fórmulas de Arco Metade -->
+            <div class="formula-card">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4">Fórmulas de Arco Metade</h2>
+                <div class="text-gray-600 space-y-2">
+                    <p>Seno de Arco Metade: $$\sin\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 - \cos(\theta)}{2}}$$</p>
+                    <p>Cosseno de Arco Metade: $$\cos\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 + \cos(\theta)}{2}}$$</p>
+                    <p>Tangente de Arco Metade: $$\tan\left(\frac{\theta}{2}\right) = \pm\sqrt{\frac{1 - \cos(\theta)}{1 + \cos(\theta)}} = \frac{\sin(\theta)}{1 + \cos(\theta)} = \frac{1 - \cos(\theta)}{\sin(\theta)}$$</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+</body>
+</html>
