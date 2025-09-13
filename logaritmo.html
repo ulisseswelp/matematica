@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas de Logaritmo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .sub {
+            vertical-align: sub;
+            font-size: 0.75em;
+        }
+        .super {
+            vertical-align: super;
+            font-size: 0.75em;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            padding: 0 4px;
+        }
+        .fraction-bar {
+            height: 2px;
+            width: 100%;
+            background-color: currentColor;
+            margin: 2px 0;
+        }
+        .bg-gray-50 .sub {
+            transform: translateY(7px);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 flex items-center justify-center min-h-screen">
+    <main class="w-full max-w-4xl bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-200">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800">Fórmulas de Logaritmo</h1>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-3 text-gray-700 text-center">Definição e Relação Fundamental</h2>
+            <div class="bg-indigo-100 p-6 rounded-lg border-l-4 border-indigo-500 text-center">
+                <p class="mt-4 text-center text-gray-800 font-medium text-lg">
+                    log<span class="sub">b</span>(x) = y &nbsp; é o mesmo que &nbsp; b<span class="super">y</span> = x
+                </p>
+            </div>
+        </section>
+
+        <hr class="my-8 border-gray-300">
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-3 text-gray-700 text-center">Propriedades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col items-center justify-center text-center">
+                    <span class="text-4xl mb-2">➕</span>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Produto</h3>
+                    <p class="text-indigo-700 font-medium text-lg">
+                        log<span class="sub">b</span>(x &times; y) = log<span class="sub">b</span>(x) + log<span class="sub">b</span>(y)
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col items-center justify-center text-center">
+                    <span class="text-4xl mb-2">➖</span>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Quociente</h3>
+                    <p class="text-indigo-700 font-medium text-lg flex items-center">
+                        <span class="inline-flex items-center">log<span class="sub">b</span><span class="ml-1">(</span></span>
+                        <span class="fraction">
+                            <span>x</span>
+                            <span class="fraction-bar w-8"></span>
+                            <span>y</span>
+                        </span>
+                        <span class="inline-flex items-center mr-1">)</span> = log<span class="sub">b</span>(x) - log<span class="sub">b</span>(y)
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col items-center justify-center text-center">
+                    <span class="text-4xl mb-2">📈</span>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Potência</h3>
+                    <p class="text-indigo-700 font-medium text-lg">
+                        log<span class="sub">b</span>(x<span class="super">n</span>) = n &times; log<span class="sub">b</span>(x)
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col items-center justify-center text-center">
+                    <span class="text-4xl mb-2">🔄</span>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Mudança de Base</h3>
+                    <p class="text-indigo-700 font-medium text-lg flex items-center">
+                        <span class="inline-flex items-center">log<span class="sub">b</span>(x) =</span>
+                        <span class="fraction">
+                            <span>log<span class="sub">c</span>(x)</span>
+                            <span class="fraction-bar"></span>
+                            <span>log<span class="sub">c</span>(b)</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
