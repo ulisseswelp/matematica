@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo sobre Exponenciação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-top: 0;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            padding: 5px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .formula-box {
+            background-color: #e8f4f8;
+            border: 1px solid #b3d9e8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .example {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Resumo de Exponenciação</h1>
+    
+    <p>A <strong>exponenciação</strong>, também conhecida como potenciação, é uma operação matemática usada para representar a multiplicação de um número por ele mesmo várias vezes. Ela é composta por dois elementos principais: a <strong>base</strong> e o <strong>expoente</strong>.</p>
+    
+    <p>A forma geral da exponenciação é <strong>a<sup>n</sup></strong>, onde:</p>
+    <ul>
+        <li><strong>a</strong> é a <strong>base</strong> (o número a ser multiplicado).</li>
+        <li><strong>n</strong> é o <strong>expoente</strong> (o número de vezes que a base é multiplicada).</li>
+    </ul>
+
+    <div class="formula-box">
+        Exemplo: <strong>2<sup>3</sup> = 2 x 2 x 2 = 8</strong>
+    </div>
+
+    <h2>Propriedades Fundamentais</h2>
+    
+    <p>As propriedades da exponenciação são regras que facilitam a simplificação e o cálculo de expressões matemáticas.</p>
+    
+    <h3>1. Multiplicação de potências com a mesma base</h3>
+    <p>Mantém-se a base e somam-se os expoentes.</p>
+    <div class="formula-box">
+        <strong>a<sup>m</sup> x a<sup>n</sup> = a<sup>m+n</sup></strong><br>
+        <span class="example">Exemplo: <strong>3<sup>2</sup> x 3<sup>4</sup> = 3<sup>2+4</sup> = 3<sup>6</sup> = 729</strong></span>
+    </div>
+    
+    <h3>2. Divisão de potências com a mesma base</h3>
+    <p>Mantém-se a base e subtraem-se os expoentes.</p>
+    <div class="formula-box">
+        <strong>a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m-n</sup></strong><br>
+        <span class="example">Exemplo: <strong>5<sup>7</sup> &divide; 5<sup>3</sup> = 5<sup>7-3</sup> = 5<sup>4</sup> = 625</strong></span>
+    </div>
+
+    <h3>3. Potência de uma potência</h3>
+    <p>Mantém-se a base e multiplicam-se os expoentes.</p>
+    <div class="formula-box">
+        <strong>(a<sup>m</sup>)<sup>n</sup> = a<sup>m &times; n</sup></strong><br>
+        <span class="example">Exemplo: <strong>(2<sup>3</sup>)<sup>2</sup> = 2<sup>3 &times; 2</sup> = 2<sup>6</sup> = 64</strong></span>
+    </div>
+
+    <h3>4. Expoente zero</h3>
+    <p>Qualquer número (diferente de zero) elevado a zero é igual a 1.</p>
+    <div class="formula-box">
+        <strong>a<sup>0</sup> = 1</strong> (onde <strong>a &ne; 0</strong>)<br>
+        <span class="example">Exemplo: <strong>10<sup>0</sup> = 1</strong></span>
+    </div>
+
+    <h3>5. Expoente negativo</h3>
+    <p>Inverte-se a base e muda-se o sinal do expoente.</p>
+    <div class="formula-box">
+        <strong>a<sup>-n</sup> = 1/a<sup>n</sup></strong><br>
+        <span class="example">Exemplo: <strong>4<sup>-2</sup> = 1/4<sup>2</sup> = 1/16</strong></span>
+    </div>
+
+</div>
+
+</body>
+</html>
