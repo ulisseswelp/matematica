@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noções de Lógica</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            font-weight: 600;
+        }
+        h1 {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        h2 {
+            margin-top: 35px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        p, ul {
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background: #ecf0f1;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #dcdde1;
+        }
+        strong {
+            color: #c0392b;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .symbol {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Resumo: Noções de Lógica</h1>
+
+    <h2>I. Proposição</h2>
+    <p>Uma <strong>proposição</strong> é uma sentença declarativa que pode ser classificada, sem ambiguidade, como <strong>Verdadeira (V)</strong> ou <strong>Falsa (F)</strong>. Não são consideradas proposições frases interrogativas, exclamativas ou sentenças abertas. Exemplo: <code>"A Terra é redonda." (V)</code></p>
+
+    <h2>II. Negação</h2>
+    <p>A <strong>negação</strong> de uma proposição P é uma nova proposição, representada por <code><span class="symbol">~</span>P</code> (lê-se "não P"). Ela inverte o valor de verdade da proposição original. Se P é verdadeira, <span class="symbol">~</span>P é falsa, e se P é falsa, <span class="symbol">~</span>P é verdadeira. Exemplo: <code>Se P é "O céu é azul.", <span class="symbol">~</span>P é "O céu não é azul."</code></p>
+
+    <h2>III. Proposição Composta - Conectivos</h2>
+    <p>As proposições compostas são formadas pela união de duas ou mais proposições simples através de <strong>conectivos lógicos</strong>. Os principais são:</p>
+    <ul>
+        <li><strong>Conjunção (e):</strong> Símbolo <code><span class="symbol">∧</span></code>. <code>P <span class="symbol">∧</span> Q</code> é verdadeira somente se P e Q forem ambas verdadeiras.</li>
+        <li><strong>Disjunção (ou):</strong> Símbolo <code><span class="symbol">∨</span></code>. <code>P <span class="symbol">∨</span> Q</code> é falsa somente se P e Q forem ambas falsas.</li>
+        <li><strong>Disjunção Exclusiva (ou... ou):</strong> Símbolo <code><span class="symbol">⊻</span></code>. <code>P <span class="symbol">⊻</span> Q</code> é verdadeira quando P e Q têm valores de verdade diferentes.</li>
+    </ul>
+
+    <h2>IV. Condicionais</h2>
+    <p>As condicionais estabelecem uma relação de "causa e efeito" lógica:</p>
+    <ul>
+        <li><strong>Condicional (se... então):</strong> Símbolo <code><span class="symbol">→</span></code>. <code>P <span class="symbol">→</span> Q</code> (lê-se "se P, então Q") é falsa apenas quando P (antecedente) é verdadeira e Q (consequente) é falsa. Em todos os outros casos, é verdadeira.</li>
+        <li><strong>Bicondicional (se e somente se):</strong> Símbolo <code><span class="symbol">↔</span></code>. <code>P <span class="symbol">↔</span> Q</code> (lê-se "P se e somente se Q") é verdadeira se P e Q têm o mesmo valor de verdade.</li>
+    </ul>
+
+    <h2>V. Tautologias</h2>
+    <p>Uma <strong>tautologia</strong> é uma proposição composta que é <strong>sempre verdadeira</strong>, independentemente dos valores de verdade de suas proposições simples. A última coluna de sua tabela verdade é composta somente por "V". Exemplo: <code>P <span class="symbol">∨</span> <span class="symbol">~</span>P</code></p>
+
+    <h2>VI. Proposições Logicamente Falsas</h2>
+    <p>Uma proposição <strong>logicamente falsa</strong>, ou <strong>contradição</strong>, é uma proposição composta que é <strong>sempre falsa</strong>. Sua última coluna na tabela verdade é composta somente por "F". Exemplo: <code>P <span class="symbol">∧</span> <span class="symbol">~</span>P</code></p>
+
+    <h2>VII. Relação de Implicação</h2>
+    <p>Dizemos que a proposição P <strong>implica</strong> Q (<code>P <span class="symbol">⇒</span> Q</code>) se a condicional <code>P <span class="symbol">→</span> Q</code> for uma tautologia. Isso significa que a veracidade de P garante a veracidade de Q. É uma relação de consequência lógica.</p>
+
+    <h2>VIII. Relação de Equivalência</h2>
+    <p>Duas proposições, P e Q, são <strong>logicamente equivalentes</strong> (<code>P <span class="symbol">⇔</span> Q</code>) se a bicondicional <code>P <span class="symbol">↔</span> Q</code> for uma tautologia. Isso significa que elas possuem a mesma tabela verdade e, portanto, têm o mesmo significado lógico. Exemplo: <code>P <span class="symbol">→</span> Q <span class="symbol">⇔</span> <span class="symbol">~</span>P <span class="symbol">∨</span> Q</code></p>
+
+    <h2>IX. Sentenças Abertas, Quantificadores</h2>
+    <p>Uma <strong>sentença aberta</strong> é uma expressão que contém variáveis e cujo valor de verdade não pode ser determinado. Exemplo: <code>x é um número par.</code> Para se tornarem proposições, elas precisam ser "fechadas" por <strong>quantificadores</strong>:</p>
+    <ul>
+        <li><strong>Quantificador Universal (<code><span class="symbol">∀</span></code>):</strong> Lê-se "para todo". Transforma a sentença em uma proposição que afirma que ela é verdadeira para todos os elementos de um conjunto.</li>
+        <li><strong>Quantificador Existencial (<code><span class="symbol">∃</span></code>):</strong> Lê-se "existe". Transforma a sentença em uma proposição que afirma que ela é verdadeira para pelo menos um elemento de um conjunto.</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
